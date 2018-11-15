@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/bpel-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bpel-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/epc-compile" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ode-runtime" charset="UTF-8" />
+  </component>
+</project>

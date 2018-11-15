@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MYODE.iml" filepath="$PROJECT_DIR$/MYODE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bpel-api/bpel-api.iml" filepath="$PROJECT_DIR$/bpel-api/bpel-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bpel-dao/bpel-dao.iml" filepath="$PROJECT_DIR$/bpel-dao/bpel-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bpel-store/bpel-store.iml" filepath="$PROJECT_DIR$/bpel-store/bpel-store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/epc-compile/epc-compile.iml" filepath="$PROJECT_DIR$/epc-compile/epc-compile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ode-compile/ode-compile.iml" filepath="$PROJECT_DIR$/ode-compile/ode-compile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ode-compile-obj/ode-compile-obj.iml" filepath="$PROJECT_DIR$/ode-compile-obj/ode-compile-obj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ode-jacob/ode-jacob.iml" filepath="$PROJECT_DIR$/ode-jacob/ode-jacob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ode-runtime/ode-runtime.iml" filepath="$PROJECT_DIR$/ode-runtime/ode-runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ode-start/ode-start.iml" filepath="$PROJECT_DIR$/ode-start/ode-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ode-util/ode-util.iml" filepath="$PROJECT_DIR$/ode-util/ode-util.iml" />
+    </modules>
+  </component>
+</project>

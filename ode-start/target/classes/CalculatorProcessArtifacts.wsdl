@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://eclipse.org/bpel/sample" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:wsdl="http://add.zht.bupt" xmlns:wsdl1="http://sub.zht.bupt" name="CalculatorProcess" targetNamespace="http://eclipse.org/bpel/sample">
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     TYPE DEFINITION - List of types participating in this BPEL process 
+     The BPEL Designer will generate default request and response types
+     but you can define or import any XML Schema type and use them as part 
+     of the message types.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <plnk:partnerLinkType name="addPLT">
+    <plnk:role name="addProvider" portType="wsdl:AddService"/>
+  </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="subPLT">
+    <plnk:role name="subProvider" portType="wsdl1:SubService"/>
+  </plnk:partnerLinkType>
+    <import location="AddService.wsdl" namespace="http://add.zht.bupt"/>
+    <import location="SubService.wsdl" namespace="http://sub.zht.bupt"/>
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://eclipse.org/bpel/sample">
+
+            <element name="CalculatorProcessRequest">
+                <complexType>
+                    <sequence>
+                        <element name="input" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="CalculatorProcessResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </schema>
+    </types>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     MESSAGE TYPE DEFINITION - Definition of the message types used as 
+     part of the port type defintions
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <types><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://eclipse.org/bpel/sample">
+	<xsd:element name="CaculatorProcessRequest"
+		type="tns:CaculatorProcessRequestType">
+	</xsd:element>
+	<xsd:element name="CaculatorProcessResponse"
+		type="tns:CaculatorProcessResponseType">
+	</xsd:element>
+	<xsd:complexType name="CaculatorProcessRequestType">
+            	<xsd:sequence>
+            		<xsd:element name="a" type="xsd:double"></xsd:element>
+            		<xsd:element name="b" type="xsd:double"></xsd:element>
+            		<xsd:element name="type" type="xsd:string"></xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+
+        
+        
+            <xsd:complexType name="CaculatorProcessResponseType">
+            	<xsd:sequence>
+            		<xsd:element name="result" type="xsd:double"></xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+</xsd:schema></types>
+    <message name="CalculatorProcessRequestMessage">
+        <part element="tns:CaculatorProcessRequest" name="payload"/>
+    </message>
+    <message name="CalculatorProcessResponseMessage">
+        <part element="tns:CaculatorProcessResponse" name="payload"/>
+    </message>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PORT TYPE DEFINITION - A port type groups a set of operations into
+     a logical service unit.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+
+    <!-- portType implemented by the CalculatorProcess BPEL process -->
+    <portType name="CalculatorProcess">
+        <operation name="process">
+            <input message="tns:CalculatorProcessRequestMessage"/>
+            <output message="tns:CalculatorProcessResponseMessage"/>
+        </operation>
+    </portType>   
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PARTNER LINK TYPE DEFINITION
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <plnk:partnerLinkType name="CalculatorProcess">
+        <plnk:role name="CalculatorProcessProvider" portType="tns:CalculatorProcess"/>
+    </plnk:partnerLinkType>
+    
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     BINDING DEFINITION - Defines the message format and protocol details
+     for a web service.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <binding name="CalculatorProcessBinding" type="tns:CalculatorProcess">
+    	<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    	<operation name="process">
+    		<soap:operation soapAction="http://eclipse.org/bpel/sample/process"/>
+    		<input>
+    			<soap:body use="literal"/>
+    		</input>
+    		<output>
+    			<soap:body use="literal"/>
+    		</output>
+    	</operation>
+    </binding>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     SERVICE DEFINITION - A service groups a set of ports into
+     a service unit.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <service name="CalculatorProcessService">
+    	<port binding="tns:CalculatorProcessBinding" name="CalculatorProcessPort">
+    		<soap:address location="http://localhost:8888/ode/process/Caculator_2/CalculatorProcess"/>
+    	</port>
+    </service>
+</definitions>
