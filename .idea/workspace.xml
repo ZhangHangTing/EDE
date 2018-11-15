@@ -2,6 +2,244 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9aebd8d-b388-47ee-9c2c-81ea9d37ecab" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__NewWSNClient_final_NewWSNClient_final_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__bupt_zht_epc_compile_1_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_wsdl_com_springsource_javax_wsdl_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_4_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MYODE.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bpel-api/bpel-api.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bpel-dao/bpel-dao.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bpel-store/bpel-store.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/epc-compile.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcCompiler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcInstance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObjectState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/And.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Arc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/DivideLogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Event.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Flow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Function.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Iu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicTreeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/MergeLogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Or.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Ou.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Xor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/epc-compile/target/test-classes/bupt/zht/AppTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/ode-compile-obj.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/DebugInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$Copy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$DirectRef.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$Expression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$LValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$LValueExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$Literal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$PartnerLinkRef.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$PropertyRef.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$RValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign$VariableRef.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OAssign.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OEmpty.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OExpressionLanguage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OFlow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OLValueExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OLink.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OPartnerLink.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OPickReceive$OnAlarm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OPickReceive$OnMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OPickReceive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OProcess$OProperty.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OProcess$OPropertyAlias.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OReply.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OScope$CorrelationSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OScope$Variable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OScope.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OSequence.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OVarType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/OWhile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/Serializer$CustomObjectInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/Serializer$CustomObjectOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/Serializer$OQName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile-obj/target/classes/bupt/zht/o/Serializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/ode-compile.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/MyCalculate.wsdl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Activity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Bpel20QName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/BpelC.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/BpelCompiler$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/BpelCompiler$StructureStack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/BpelCompiler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/BpelCompiler20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/BpelObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/BpelObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/CompilerContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Copy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Correlation$CorrelationPattern.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Correlation$Initiate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Correlation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Correlations.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Expression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/From.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Import.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/LinkSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/LinkTarget.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Process.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/ProcessInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Scope.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Sources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Targets.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/To.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Variable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/VariableVal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/Variables.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/AssignActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/CompositeActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/CreateInstanceActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/EmptyActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/ReceiveActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/ReplyActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/SequenceActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/activity/WhileActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/generator/ActivityGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/generator/AssignGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/generator/DefaultActivityGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/generator/EmptyGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/generator/ReceiveGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/generator/ReplyGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/bupt/zht/bom/generator/SequenceGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-compile/target/classes/service.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/ode-jacob.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/Channel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/ChannelListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/DebugInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/IndexedObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/JacobObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/JacobRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/JacobThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/Synch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/SynchChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/Val.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/ValChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/ValChannelListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/Demo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/DemoChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/DemoChannelListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/Main$INVOKE$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/Main$INVOKE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/Main$Process$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/Main$Process.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/Main$RECEIVE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/bpeltest/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/Comm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/CommChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/CommGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/CommRecv.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/CommSend.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/Continuation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/ExecutionQueue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/ExecutionQueueObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/soup/ReplacementMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/MainObject$1$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/MainObject$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/MainObject$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/MainObject$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/MainObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/TestChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/TestChannelListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/TestObject$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/test/TestObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ChannelFactory$ChannelInvocationHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ChannelFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$ChannelFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$ChannelRef.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$CommFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$CommGroupFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$ExecutionQueueInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$ExecutionQueueOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$ExecutionQueueStatistics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$MessageFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl$ObjectFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/ExecutionQueueImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/JacobMessages.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/JacobVPU$JacobThreadImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/JacobVPU.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/Statistics$PerTargetStatistics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-jacob/target/classes/org/apache/ode/jacob/vpu/Statistics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-runtime/ode-runtime.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/ode-start.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/AddService.wsdl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/CalculatorProcess.bpel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/CalculatorProcess.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/CalculatorProcessArtifacts.wsdl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/SubService.wsdl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/ProcessManagement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/Staff.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/pubsub/INotificationProcess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/pubsub/MonitorService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/pubsub/NotificationProcessImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/pubsub/Publisher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/pubsub/Subscriber.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/service/LogicService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-start/target/classes/engin/service/ShoppingSolveService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/ode-util.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/CollectionUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/GUID$MalformedGuidException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/GUID.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/InterPool$InternableBlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/InterPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/ObjectPrinter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/ProcessMutex.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/SerializableElement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/msg/CommonMessages.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ode-util/target/classes/org/apache/ode/utils/msg/MessageBundle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcCompiler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcInstance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcObjectState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/And.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Arc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/DivideLogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Event.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Flow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Function.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Iu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicTree$MyTreeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicTree.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicTreeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/MergeLogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Or.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Ou.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Xor.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +266,8 @@
       <file leaf-file-name="EpcCompiler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="251" column="1" lean-forward="true" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+            <state relative-caret-position="494">
+              <caret line="251" column="1" lean-forward="false" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
@@ -46,11 +284,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ode-start.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ode-start/ode-start.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="-343">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -60,7 +308,7 @@
         <entry file="file://$PROJECT_DIR$/.git/info/exclude">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -198,7 +446,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -229,8 +479,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,6 +493,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="add_unversioned_files" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -368,7 +617,8 @@
       <workItem from="1542248782455" duration="416000" />
       <workItem from="1542249876677" duration="914000" />
       <workItem from="1542251766078" duration="509000" />
-      <workItem from="1542252337827" duration="117000" />
+      <workItem from="1542252337827" duration="187000" />
+      <workItem from="1542253226166" duration="125000" />
     </task>
     <task id="LOCAL-00001" summary="添加EPML资源文件">
       <created>1542252063778</created>
@@ -384,11 +634,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542252263723</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加ignore">
+      <created>1542252591193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542252591193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56550000" />
+    <option name="totallyTimeSpent" value="56745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -402,19 +659,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23473541" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23473541" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06948229" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14304124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14497423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -433,7 +690,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加EPML资源文件" />
     <MESSAGE value="添加过滤文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加过滤文件" />
+    <MESSAGE value="添加ignore" />
+    <MESSAGE value="添加.gitignore文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加.gitignore文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -442,6 +701,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -512,14 +798,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -807,8 +1086,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="251" column="1" lean-forward="true" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+        <state relative-caret-position="494">
+          <caret line="251" column="1" lean-forward="false" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
@@ -827,15 +1106,23 @@
     <entry file="file://$PROJECT_DIR$/.git/info/exclude">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ode-start/ode-start.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="-343">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
