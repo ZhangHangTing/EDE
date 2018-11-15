@@ -1,0 +1,55 @@
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc name="EPC" ServicesName="null">
+		<event Theme="all:start" id="2">
+			<name>开始事件</name>
+		</event>
+		<event Theme="all:check" id="10">
+			<name>货物审核事件</name>
+		</event>
+		<event Theme="all:arrive" id="23">
+			<name>货物到达事件</name>
+		</event>
+		<event Theme="all:end" id="29">
+			<name>结束事件</name>
+		</event>
+		<function ServiceName="shoppingarriveservice" id="3">
+			<name>接受货物函数</name>
+		</function>
+		<function ServiceName="shoppingpayservice" id="27">
+			<name>货物付款函数</name>
+		</function>
+		<function ServiceName="shoppingcheckservice" id="31">
+			<name>审核函数</name>
+		</function>
+		<ou auth="提货员" id="5"/>
+		<iu data="提货单" id="4"/>
+		<and id="19"/>
+		<arc id="20">
+			<flow source="2" target="3"/>
+		</arc>
+		<arc id="24">
+			<flow source="3" target="23"/>
+		</arc>
+		<arc id="21">
+			<flow source="4" target="3"/>
+		</arc>
+		<arc id="22">
+			<flow source="5" target="3"/>
+		</arc>
+		<arc id="28">
+			<flow source="19" target="27"/>
+		</arc>
+		<arc id="25">
+			<flow source="23" target="19"/>
+		</arc>
+		<arc id="30">
+			<flow source="27" target="29"/>
+		</arc>
+		<arc id="32">
+			<flow source="31" target="10"/>
+		</arc>
+		<arc id="33">
+			<flow source="10" target="19"/>
+		</arc>
+	</epc>
+</epml:epml>

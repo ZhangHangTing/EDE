@@ -1,0 +1,51 @@
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc name="EPC" ServicesName="null">
+		<event Theme="all:start" id="2">
+			<name>开始事件</name>
+		</event>
+		<event Theme="all:event1" id="5">
+			<name>事件1</name>
+		</event>
+		<event Theme="all:event2" id="7">
+			<name>事件2</name>
+		</event>
+		<event Theme="all:end" id="12">
+			<name>结束事件</name>
+		</event>
+		<event Theme="all:event3" id="16">
+			<name>事件3</name>
+		</event>
+		<function ServiceName="startfunction" id="8">
+			<name>开始函数</name>
+		</function>
+		<function ServiceName="solvefunction" id="11">
+			<name>处理函数</name>
+		</function>
+		<and id="3"/>
+		<or id="4"/>
+		<arc id="18">
+			<flow source="2" target="8"/>
+		</arc>
+		<arc id="17">
+			<flow source="3" target="11"/>
+		</arc>
+		<arc id="15">
+			<flow source="4" target="3"/>
+		</arc>
+		<arc id="9">
+			<flow source="5" target="4"/>
+		</arc>
+		<arc id="10">
+			<flow source="7" target="4"/>
+		</arc>
+		<arc id="19">
+			<flow source="8" target="16"/>
+		</arc>
+		<arc id="14">
+			<flow source="11" target="12"/>
+		</arc>
+		<arc id="20">
+			<flow source="16" target="3"/>
+		</arc>
+	</epc>
+</epml:epml>
