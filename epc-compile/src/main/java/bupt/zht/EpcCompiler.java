@@ -5,10 +5,6 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-import sun.rmi.runtime.Log;
-import sun.security.jgss.LoginConfigImpl;
-
 import java.io.File;
 import java.util.*;
 
@@ -234,8 +230,8 @@ public class EpcCompiler {
     }
     public static void main(String[] args) throws DocumentException {
         EpcCompiler epcCompiler = new EpcCompiler();
-        epcCompiler.compile("C:\\Users\\lenovo\\Desktop/EPMLTest.xml");
-        //epcCompiler.compile("C:\\Users\\lenovo\\Desktop/ComplexEventsTest.xml");
+        String path = System.getProperty("user.dir") + "/epc-compile/src/main/resources/";
+        epcCompiler.compile(path + "ComplexEventsTest.xml");
         epcCompiler.mappingLogicEvent();
         epcCompiler.showLogicUnitEventsMap();
         epcCompiler.extract();

@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9aebd8d-b388-47ee-9c2c-81ea9d37ecab" name="Default" comment="重新添加.gitignore文件">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__bupt_zht_epc_compile_1_0_SNAPSHOT.xml" afterPath="" />
+    <list default="true" id="d9aebd8d-b388-47ee-9c2c-81ea9d37ecab" name="Default" comment="添加EPML测试文件">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcCompiler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcInstance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/EpcObjectState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/And.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Arc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/DivideLogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Event.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Flow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Function.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Iu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicTree$MyTreeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicTree.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicTreeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/LogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/MergeLogicUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Or.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Ou.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/epc-compile/bupt/zht/activity/Xor.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcCompiler.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcCompiler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcInstance.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcInstance.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcModel.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObject.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObjectState.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObjectState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/And.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/And.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Arc.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Arc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/DivideLogicUnit.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/DivideLogicUnit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Event.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Event.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Flow.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Flow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Function.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Function.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Iu.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Iu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicTreeNode.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicTreeNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicUnit.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicUnit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/MergeLogicUnit.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/MergeLogicUnit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Or.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Or.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Ou.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Ou.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Xor.class" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Xor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/target/test-classes/bupt/zht/AppTest.class" afterPath="$PROJECT_DIR$/epc-compile/target/test-classes/bupt/zht/AppTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/epc-compile.iml" afterPath="$PROJECT_DIR$/epc-compile/epc-compile.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ode-start/ode-start.iml" afterPath="$PROJECT_DIR$/ode-start/ode-start.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" afterPath="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bpel-dao/target/" />
@@ -30,13 +66,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EpcCompiler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EpcCompiler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="251" column="1" lean-forward="false" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+            <state relative-caret-position="-1101">
+              <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
                 <element signature="method#compile#0;class#EpcCompiler#0" expanded="false" />
                 <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" expanded="false" />
@@ -45,7 +80,6 @@
                 <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" expanded="false" />
                 <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" expanded="false" />
                 <element signature="method#preOrderVisit#0;class#EpcCompiler#0" expanded="false" />
-                <element signature="method#main#0;class#EpcCompiler#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,12 +95,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="108">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+              <folding>
+                <marker date="1542276467404" expanded="true" signature="67197:67214" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67197:67232" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67197:67245" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67197:67260" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67295:69534" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67308:69519" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67362:67657" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67381:67642" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67444:67622" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67484:67588" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67505:67566" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67707:68034" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67726:68019" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67821:67999" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67861:67965" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="67882:67943" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68085:68350" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68104:68335" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68137:68315" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68177:68281" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68198:68259" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68393:68699" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68412:68684" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68486:68664" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68526:68630" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68547:68608" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68750:69110" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68769:69095" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68851:69075" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68891:69041" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="68912:69019" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="69162:69505" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="69181:69490" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="69292:69470" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="69332:69436" ph="..." />
+                <marker date="1542276467404" expanded="true" signature="69353:69414" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,16 +157,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
               <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Event.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -175,8 +246,9 @@
         <option value="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/XOR.java" />
         <option value="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Xor.java" />
         <option value="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicTreeNode.java" />
-        <option value="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" />
       </list>
     </option>
   </component>
@@ -220,21 +292,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="EDE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EDE" type="462c0819:PsiDirectoryNode" />
+              <item name="MYODE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MYODE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MYODE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MYODE" type="462c0819:PsiDirectoryNode" />
+              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MYODE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MYODE" type="462c0819:PsiDirectoryNode" />
+              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MYODE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MYODE" type="462c0819:PsiDirectoryNode" />
+              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MYODE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MYODE" type="462c0819:PsiDirectoryNode" />
+              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MYODE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MYODE" type="462c0819:PsiDirectoryNode" />
+              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zht" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +355,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="add_unversioned_files" value="true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.idea/workspace.xml&#10;true" />
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
@@ -376,6 +483,7 @@
       <workItem from="1542252337827" duration="187000" />
       <workItem from="1542253226166" duration="125000" />
       <workItem from="1542253496674" duration="91000" />
+      <workItem from="1542276105496" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="添加EPML资源文件">
       <created>1542252063778</created>
@@ -402,38 +510,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56836000" />
+    <option name="totallyTimeSpent" value="57214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5013624" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23473541" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32288828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06948229" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14110824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17783505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39918256" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -450,7 +557,8 @@
     <MESSAGE value="添加ignore" />
     <MESSAGE value="添加.gitignore文件" />
     <MESSAGE value="重新添加.gitignore文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="重新添加.gitignore文件" />
+    <MESSAGE value="添加EPML测试文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加EPML测试文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -459,14 +567,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -491,7 +591,6 @@
         <state relative-caret-position="486">
           <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#compile#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" expanded="false" />
@@ -500,7 +599,6 @@
             <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#preOrderVisit#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#main#0;class#EpcCompiler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -562,7 +660,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#compile#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" expanded="false" />
@@ -571,7 +668,6 @@
             <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#preOrderVisit#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#main#0;class#EpcCompiler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -632,7 +728,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#compile#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" expanded="false" />
@@ -641,7 +736,6 @@
             <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#preOrderVisit#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#main#0;class#EpcCompiler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -702,7 +796,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#compile#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" expanded="false" />
@@ -711,7 +804,6 @@
             <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" expanded="false" />
             <element signature="method#preOrderVisit#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#main#0;class#EpcCompiler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -842,25 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="251" column="1" lean-forward="false" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#compile#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#extract#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#preOrderVisit#0;class#EpcCompiler#0" expanded="false" />
-            <element signature="method#main#0;class#EpcCompiler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.git/info/exclude">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -877,11 +950,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+          <folding>
+            <marker date="1542276467404" expanded="true" signature="67197:67214" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67197:67232" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67197:67245" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67197:67260" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67295:69534" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67308:69519" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67362:67657" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67381:67642" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67444:67622" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67484:67588" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67505:67566" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67707:68034" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67726:68019" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67821:67999" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67861:67965" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="67882:67943" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68085:68350" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68104:68335" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68137:68315" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68177:68281" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68198:68259" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68393:68699" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68412:68684" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68486:68664" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68526:68630" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68547:68608" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68750:69110" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68769:69095" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68851:69075" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68891:69041" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="68912:69019" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="69162:69505" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="69181:69490" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="69292:69470" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="69332:69436" ph="..." />
+            <marker date="1542276467404" expanded="true" signature="69353:69414" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="108">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1101">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="method#init#0;class#EpcCompiler#0" expanded="false" />
+            <element signature="method#compile#0;class#EpcCompiler#0" expanded="false" />
+            <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" expanded="false" />
+            <element signature="method#extract#0;class#EpcCompiler#0" expanded="false" />
+            <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" expanded="false" />
+            <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" expanded="false" />
+            <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" expanded="false" />
+            <element signature="method#preOrderVisit#0;class#EpcCompiler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
