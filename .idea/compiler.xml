@@ -18,5 +18,18 @@
         <module name="ode-util" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bpel-api" target="1.8" />
+      <module name="bpel-dao" target="1.8" />
+      <module name="bpel-store" target="1.8" />
+      <module name="epc-compile" target="1.8" />
+      <module name="MYODE" target="1.8" />
+      <module name="ode-compile" target="1.8" />
+      <module name="ode-compile-obj" target="1.8" />
+      <module name="ode-jacob" target="1.8" />
+      <module name="ode-runtime" target="1.8" />
+      <module name="ode-start" target="1.8" />
+      <module name="ode-util" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
