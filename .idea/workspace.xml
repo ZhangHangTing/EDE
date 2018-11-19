@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9aebd8d-b388-47ee-9c2c-81ea9d37ecab" name="Default" comment="mac上没有修改任何代码">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpel-api/bpel-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpel-dao/bpel-dao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpel-store/bpel-store.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/epc-compile.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcCompiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcCompiler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-compile-obj/ode-compile-obj.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-compile/ode-compile.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-jacob/ode-jacob.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-runtime/ode-runtime.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-start/ode-start.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-util/ode-util.iml" beforeDir="false" />
+    <list default="true" id="d9aebd8d-b388-47ee-9c2c-81ea9d37ecab" name="Default" comment="local的update-logictree">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bpel-dao/target/" />
@@ -67,12 +54,14 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="java" value="3" />
+          <entry key="md" value="1" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="3" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="2" />
         </counts>
@@ -80,22 +69,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="4" />
+          <entry key="md" value="38" />
+          <entry key="txt" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="4" />
+          <entry key="Markdown" value="38" />
+          <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="259">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="method#init#0;class#EpcCompiler#0" />
                 <element signature="method#compile#0;class#EpcCompiler#0" />
@@ -104,6 +97,18 @@
                 <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />
                 <element signature="method#preOrderVisit#0;class#EpcCompiler#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="28">
+                <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -182,6 +187,7 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -281,7 +287,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.idea/workspace.xml&#10;true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542452148367" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542596296624" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -376,7 +382,7 @@
       <workItem from="1542293882390" duration="888000" />
       <workItem from="1542294827838" duration="503000" />
       <workItem from="1542295329816" duration="565000" />
-      <workItem from="1542295974174" duration="1082000" />
+      <workItem from="1542295974174" duration="2558000" />
     </task>
     <task id="LOCAL-00001" summary="添加EPML资源文件">
       <created>1542252063778</created>
@@ -406,11 +412,25 @@
       <option name="project" value="LOCAL" />
       <updated>1542277309742</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mac上没有修改任何代码">
+      <created>1542592576291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542592576294</updated>
+    </task>
+    <task id="LOCAL-00006" summary="local的update-logictree">
+      <created>1542596179828</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542596179828</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61599000" />
+    <option name="totallyTimeSpent" value="63075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,7 +445,7 @@
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23487031" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18587896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -434,14 +454,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927953" visible="true" weight="0.32524964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927953" weight="0.32524964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49927953" weight="0.32952926" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49927953" weight="0.3195435" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985591" weight="0.32239658" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50072044" side_tool="true" weight="0.31532848" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4985591" visible="true" weight="0.3195435" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985591" weight="0.5791726" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50144094" side_tool="true" visible="true" weight="0.3195435" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.49927953" weight="0.32952926" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49927953" weight="0.5007133" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -496,7 +516,8 @@
     <MESSAGE value="重新添加.gitignore文件" />
     <MESSAGE value="添加EPML测试文件" />
     <MESSAGE value="mac上没有修改任何代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="mac上没有修改任何代码" />
+    <MESSAGE value="local的update-logictree" />
+    <option name="LAST_COMMIT_MESSAGE" value="local的update-logictree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -651,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="259">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="method#init#0;class#EpcCompiler#0" />
             <element signature="method#compile#0;class#EpcCompiler#0" />
@@ -661,6 +682,16 @@
             <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />
             <element signature="method#preOrderVisit#0;class#EpcCompiler#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="28">
+            <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
