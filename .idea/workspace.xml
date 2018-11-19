@@ -1,40 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9aebd8d-b388-47ee-9c2c-81ea9d37ecab" name="Default" comment="添加EPML测试文件">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="d9aebd8d-b388-47ee-9c2c-81ea9d37ecab" name="Default" comment="mac上没有修改任何代码">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MYODE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MYODE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpel-api/bpel-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bpel-api/bpel-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpel-dao/bpel-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bpel-dao/bpel-dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpel-store/bpel-store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bpel-store/bpel-store.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/epc-compile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/epc-compile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bpel-api/bpel-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bpel-dao/bpel-dao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bpel-store/bpel-store.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/epc-compile/epc-compile.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcCompiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcCompiler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcInstance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObjectState.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/EpcObjectState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/And.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/And.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Arc.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Arc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/DivideLogicUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/DivideLogicUnit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Flow.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Flow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Function.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Iu.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Iu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/LogicUnit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/MergeLogicUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/MergeLogicUnit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Or.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Or.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Ou.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Ou.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Xor.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/classes/bupt/zht/activity/Xor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epc-compile/target/test-classes/bupt/zht/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/epc-compile/target/test-classes/bupt/zht/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-compile-obj/ode-compile-obj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ode-compile-obj/ode-compile-obj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-compile/ode-compile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ode-compile/ode-compile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-jacob/ode-jacob.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ode-jacob/ode-jacob.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-runtime/ode-runtime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ode-runtime/ode-runtime.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-start/ode-start.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ode-start/ode-start.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ode-util/ode-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ode-util/ode-util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ode-compile-obj/ode-compile-obj.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ode-compile/ode-compile.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ode-jacob/ode-jacob.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ode-runtime/ode-runtime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ode-start/ode-start.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ode-util/ode-util.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bpel-dao/target/" />
@@ -51,25 +32,73 @@
     <ignored mask="*iml" />
     <ignored mask="*idea" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-479783703">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="3" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EpcCompiler.java" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="215" column="5" lean-forward="true" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+            <state relative-caret-position="134">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#EpcCompiler#0" />
                 <element signature="method#compile#0;class#EpcCompiler#0" />
-                <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" />
-                <element signature="method#extract#0;class#EpcCompiler#0" />
                 <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" />
                 <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" />
                 <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />
@@ -79,78 +108,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ode-start.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ode-start/ode-start.iml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/resources/ComplexEventsTest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="116" selection-start-line="1" selection-start-column="116" selection-end-line="1" selection-end-column="116" />
+            <state relative-caret-position="-8">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="-62">
               <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exclude" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.git/info/exclude">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcInstance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="-8">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DivideLogicUnit.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcObjectState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/DivideLogicUnit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="-8">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="And.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/And.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ou.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogicUnit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -200,14 +198,61 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="812" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>GSPGrailsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GrailsGroovy</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -217,6 +262,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,54 +270,18 @@
               <item name="EDE" type="b2602c69:ProjectViewProjectNode" />
               <item name="EDE" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="EDE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EDE" type="462c0819:PsiDirectoryNode" />
-              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EDE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EDE" type="462c0819:PsiDirectoryNode" />
-              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EDE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EDE" type="462c0819:PsiDirectoryNode" />
-              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EDE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EDE" type="462c0819:PsiDirectoryNode" />
-              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EDE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EDE" type="462c0819:PsiDirectoryNode" />
-              <item name="epc-compile" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zht" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.idea/workspace.xml&#10;true" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542452148367" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -279,7 +289,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="settings.editor.splitter.proportion" value="0.18971507" />
   </component>
   <component name="RecentsManager">
@@ -310,47 +320,29 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -377,7 +369,14 @@
       <workItem from="1542253226166" duration="125000" />
       <workItem from="1542253496674" duration="91000" />
       <workItem from="1542276105496" duration="378000" />
-      <workItem from="1542277108724" duration="165000" />
+      <workItem from="1542277108724" duration="309000" />
+      <workItem from="1542277578944" duration="335000" />
+      <workItem from="1542277995124" duration="280000" />
+      <workItem from="1542278308106" duration="423000" />
+      <workItem from="1542293882390" duration="888000" />
+      <workItem from="1542294827838" duration="503000" />
+      <workItem from="1542295329816" duration="565000" />
+      <workItem from="1542295974174" duration="1082000" />
     </task>
     <task id="LOCAL-00001" summary="添加EPML资源文件">
       <created>1542252063778</created>
@@ -400,48 +399,91 @@
       <option name="project" value="LOCAL" />
       <updated>1542252591193</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mac上没有修改任何代码">
+      <created>1542277309741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542277309742</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57379000" />
+    <option name="totallyTimeSpent" value="61599000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.5013624" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43430153" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.06948229" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21180555" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23487031" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927953" visible="true" weight="0.32524964" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49927953" weight="0.32952926" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49927953" weight="0.3195435" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985591" weight="0.32239658" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50072044" side_tool="true" weight="0.31532848" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.49927953" weight="0.32952926" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49927953" weight="0.5007133" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3299712" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3299712" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -453,265 +495,22 @@
     <MESSAGE value="添加.gitignore文件" />
     <MESSAGE value="重新添加.gitignore文件" />
     <MESSAGE value="添加EPML测试文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加EPML测试文件" />
+    <MESSAGE value="mac上没有修改任何代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="mac上没有修改任何代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#EpcCompiler#0" />
-            <element signature="method#compile#0;class#EpcCompiler#0" />
-            <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" />
-            <element signature="method#extract#0;class#EpcCompiler#0" />
-            <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" />
-            <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" />
-            <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />
-            <element signature="method#preOrderVisit#0;class#EpcCompiler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/DivideLogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#EpcCompiler#0" />
-            <element signature="method#compile#0;class#EpcCompiler#0" />
-            <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" />
-            <element signature="method#extract#0;class#EpcCompiler#0" />
-            <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" />
-            <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" />
-            <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />
-            <element signature="method#preOrderVisit#0;class#EpcCompiler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/DivideLogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#EpcCompiler#0" />
-            <element signature="method#compile#0;class#EpcCompiler#0" />
-            <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" />
-            <element signature="method#extract#0;class#EpcCompiler#0" />
-            <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" />
-            <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" />
-            <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />
-            <element signature="method#preOrderVisit#0;class#EpcCompiler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/DivideLogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#EpcCompiler#0" />
-            <element signature="method#compile#0;class#EpcCompiler#0" />
-            <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" />
-            <element signature="method#extract#0;class#EpcCompiler#0" />
-            <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" />
-            <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" />
-            <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />
-            <element signature="method#preOrderVisit#0;class#EpcCompiler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ode-start/src/main/java/bupt/zht/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -760,63 +559,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/DivideLogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/epc-compile/src/main/resources/EPMLTest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ode-start/ode-start.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="116" selection-start-line="1" selection-start-column="116" selection-end-line="1" selection-end-column="116" />
         </state>
       </provider>
     </entry>
@@ -827,23 +573,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ode-start/ode-start.iml" />
+    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/And.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Ou.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/Flow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/LogicUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="-62">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcObjectState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/activity/DivideLogicUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/epc-compile/src/main/resources/ComplexEventsTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/epc-compile/src/main/java/bupt/zht/EpcCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="215" column="5" lean-forward="true" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+        <state relative-caret-position="134">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#EpcCompiler#0" />
             <element signature="method#compile#0;class#EpcCompiler#0" />
-            <element signature="method#mappingLogicEvent#0;class#EpcCompiler#0" />
-            <element signature="method#extract#0;class#EpcCompiler#0" />
             <element signature="method#findIndexTreeNode#0;class#EpcCompiler#0" />
             <element signature="method#showLogicUnitEventsMap#0;class#EpcCompiler#0" />
             <element signature="method#showFunctionLogicTree#0;class#EpcCompiler#0" />

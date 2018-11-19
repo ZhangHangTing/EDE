@@ -1,5 +1,4 @@
 package bupt.zht;
-
 import bupt.zht.activity.*;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -7,7 +6,6 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import java.io.File;
 import java.util.*;
-
 /**
  * @author zhanghangting
  * @date 2018/10/30 15:37
@@ -111,7 +109,7 @@ public class EpcCompiler {
                     tempLogicEvents.add(epcMap.get(sourceEpcObjectId));
                 }
             }
-            logicUnitEventsMap.put(logicUnit,new LinkedList<>(tempLogicEvents));
+            logicUnitEventsMap.put(logicUnit, new LinkedList<>(tempLogicEvents));
             tempLogicEvents.clear();
         }
     }
@@ -153,11 +151,11 @@ public class EpcCompiler {
                         // 层级创建二叉树的过程，用到了孩子队列和父亲队列
                         while (!childNodeQueue.isEmpty()) {
                             fatherNode = fatherNodeQueue.poll();
-                            if(index == null){
+                            if (index == null) {
                                 index = new LogicTreeNode(fatherNode);
-                            }else{
+                            } else {
                                 // 通过遍历的方法寻找到当前出队节点在已经构建树中的位置，并且指向它
-                                index = findIndexTreeNode(root,fatherNode.getId());
+                                index = findIndexTreeNode(root, fatherNode.getId());
                             }
                             if (root == null) {
                                 root = index;
@@ -165,10 +163,10 @@ public class EpcCompiler {
                             lChildNode = childNodeQueue.poll();
                             index.setLeft(new LogicTreeNode(lChildNode));
                             fatherNodeQueue.add(lChildNode);
-                            if (logicUnitEventsMap.containsKey(lChildNode)){
+                            if (logicUnitEventsMap.containsKey(lChildNode)) {
                                 childNodeQueue.addAll(logicUnitEventsMap.get(lChildNode));
                                 System.out.println("左子树入队以后，输出现在孩子队列的节点");
-                                for(EpcObject child : childNodeQueue){
+                                for (EpcObject child : childNodeQueue) {
                                     System.out.println(child.getName());
                                 }
                             }
@@ -176,10 +174,10 @@ public class EpcCompiler {
                                 rChildNode = childNodeQueue.poll();
                                 index.setRight(new LogicTreeNode(rChildNode));
                                 fatherNodeQueue.add(rChildNode);
-                                if (logicUnitEventsMap.containsKey(rChildNode)){
+                                if (logicUnitEventsMap.containsKey(rChildNode)) {
                                     childNodeQueue.addAll(logicUnitEventsMap.get(rChildNode));
                                     System.out.println("右子树入队以后，输出现在孩子队列的节点");
-                                    for(EpcObject child : childNodeQueue){
+                                    for (EpcObject child : childNodeQueue) {
                                         System.out.println(child.getName());
                                     }
                                 }
@@ -192,12 +190,13 @@ public class EpcCompiler {
             functionMap.put(function, root);
         }
     }
-    public LogicTreeNode findIndexTreeNode(LogicTreeNode root,String indexId){
+
+    public LogicTreeNode findIndexTreeNode(LogicTreeNode root, String indexId) {
         Queue<LogicTreeNode> queue = new LinkedList<>();
         queue.add(root);
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             LogicTreeNode tempTreeNode = queue.poll();
-            if(tempTreeNode.getEpcObject().getId().equals(indexId))
+            if (tempTreeNode.getEpcObject().getId().equals(indexId))
                 return tempTreeNode;
             queue.add(tempTreeNode.getLeft());
             queue.add(tempTreeNode.getRight());
