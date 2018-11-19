@@ -19,6 +19,7 @@
         <module>bpel-api</module>
         <module>bpel-dao</module>
         <module>epc-compile</module>
+        <module>epc-runtime</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->

@@ -10,6 +10,7 @@
         <module name="bpel-dao" />
         <module name="bpel-store" />
         <module name="epc-compile" />
+        <module name="epc-runtime" />
         <module name="ode-compile" />
         <module name="ode-compile-obj" />
         <module name="ode-jacob" />
