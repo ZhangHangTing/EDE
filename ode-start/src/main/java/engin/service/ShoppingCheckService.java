@@ -22,6 +22,5 @@ public class ShoppingCheckService implements INotificationProcess{
         String message = dataSource[1];
         CheckStaff checkStaff = new CheckStaff(name);
         checkStaff.doSomething(message);
-
     }
 }

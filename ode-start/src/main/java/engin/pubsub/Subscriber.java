@@ -2,7 +2,6 @@ package engin.pubsub;
 
 import engin.service.ShoppingArriveService;
 import wsn.wsnclient.command.SendWSNCommand;
-
 import javax.xml.ws.Endpoint;
 
 /**
