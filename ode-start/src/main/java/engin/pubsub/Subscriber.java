@@ -9,6 +9,14 @@ import javax.xml.ws.Endpoint;
  * @date 2018/10/21 18:35
  */
 public class Subscriber {
+//    static String subWebAddr = "http://10.108.164.106:9016/wsn-subscribe";// 订阅用户webservice地址
+//    static String wsnAddr = "http://10.108.164.106:9000/wsn-core";// 发布订阅节点地址
+
+//    public static void main(String[] args) {
+//        ShoppingArriveService shoppingSolveService = new ShoppingArriveService();
+//        Endpoint.publish(subWebAddr, shoppingSolveService);
+//    }
+
     public static void main(String[] args) {
         String subWebAddr = "http://10.108.164.106:9016/wsn-subscribe";// 订阅用户webservice地址
         String wsnAddr = "http://10.108.164.106:9000/wsn-core";// 发布订阅节点地址

@@ -10,9 +10,8 @@ public class Publisher {
 
     private static  String webserviceAddr = "http://10.108.164.106:9002/wsn-core-subscriber";
     private static  String wsnAddr = "http://10.108.164.106:9000/wsn-core";
-    private final static SendWSNCommandWSSyn command = new SendWSNCommandWSSyn(webserviceAddr, wsnAddr);
+    public static final  SendWSNCommandWSSyn command = new SendWSNCommandWSSyn(webserviceAddr, wsnAddr);
     public static void main(String[] args){
-
         Publisher.publish("kobe","all:shoppingarrive","货物已经到达");
     }
 

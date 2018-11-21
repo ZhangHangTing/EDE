@@ -167,10 +167,6 @@ public class EpcCompiler {
                             fatherNodeQueue.add(lChildNode);
                             if (logicUnitEventsMap.containsKey(lChildNode)) {
                                 childNodeQueue.addAll(logicUnitEventsMap.get(lChildNode));
-                                System.out.println("左子树入队以后，输出现在孩子队列的节点");
-                                for (EpcObject child : childNodeQueue) {
-                                    System.out.println(child.getName());
-                                }
                             }
                             if (!childNodeQueue.isEmpty()) {
                                 rChildNode = childNodeQueue.poll();
@@ -178,10 +174,6 @@ public class EpcCompiler {
                                 fatherNodeQueue.add(rChildNode);
                                 if (logicUnitEventsMap.containsKey(rChildNode)) {
                                     childNodeQueue.addAll(logicUnitEventsMap.get(rChildNode));
-                                    System.out.println("右子树入队以后，输出现在孩子队列的节点");
-                                    for (EpcObject child : childNodeQueue) {
-                                        System.out.println(child.getName());
-                                    }
                                 }
                             }
                         }

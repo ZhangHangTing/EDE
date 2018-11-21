@@ -16,10 +16,11 @@ public class ShoppingArriveService implements INotificationProcess{
     @Override
     public void notificationProcess(String notification) {
         // 角色实例人员通过获取外部数据，完成该服务
-        String[] dataSource = notification.split(";");
-        String name = dataSource[0];
-        String message = dataSource[1];
-        DeliveryStaff deliveryStaff = new DeliveryStaff(name);
-        deliveryStaff.doSomething(message);
+        System.out.println(notification);
+//        String[] dataSource = notification.split(";");
+//        String name = dataSource[0];
+//        String message = dataSource[1];
+//        DeliveryStaff deliveryStaff = new DeliveryStaff(name);
+//        deliveryStaff.doSomething(message);
     }
 }
