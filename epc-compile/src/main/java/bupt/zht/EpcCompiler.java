@@ -1,6 +1,5 @@
 package bupt.zht;
 import bupt.zht.activity.*;
-import bupt.zht.monitor.EventTheme;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -58,7 +57,7 @@ public class EpcCompiler {
             String eventName = event.element("name").getText();
             String eventTheme = event.attribute("Theme").getValue();
             // 将流程的事件主题都存储到事件主题链表中，该链表中到主题负责被监听器监听
-            EventTheme.eventThemeList.add(eventTheme);
+            ProcessInfo.eventThemeList.add(eventTheme);
             Event eventObject = new Event(eventId, eventName);
             eventObject.setTheme(eventTheme);
             epcEventList.add(eventObject);
@@ -238,6 +237,7 @@ public class EpcCompiler {
         epcCompiler.showLogicUnitEventsMap();
         epcCompiler.extract();
         epcCompiler.showFunctionLogicTree();
+        ProcessInfo.epcCompiler = epcCompiler;
 //        while (true) {
 //            System.out.println("running");
 //            try {
@@ -246,5 +246,8 @@ public class EpcCompiler {
 //                e.printStackTrace();
 //            }
 //        }
+    }
+    public Map<Function, LogicTreeNode> getFunctionMap() {
+        return functionMap;
     }
 }

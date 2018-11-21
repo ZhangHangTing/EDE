@@ -31,11 +31,12 @@ public class EpcObject implements Serializable{
     public void setName(String name) {
         this.name = name;
     }
+
     @Override
     public boolean equals(Object object){
         if(object instanceof EpcObject ){
             EpcObject anotherEpcObject = (EpcObject) object;
-            if(this.id.equals(anotherEpcObject.getId()))
+            if(this.id.equals(anotherEpcObject.getId()) && this.name.equals(anotherEpcObject.getName()))
                 return true;
         }
         return false;
