@@ -237,7 +237,7 @@ public class EpcCompiler {
     public static void main(String[] args) throws DocumentException {
         EpcCompiler epcCompiler = new EpcCompiler();
         String path = System.getProperty("user.dir") + "/epc-compile/src/main/resources/";
-        epcCompiler.compile(path + "ComplexEventsTest.xml");
+        epcCompiler.compile(path + "ProductAndAssemble.xml");
         epcCompiler.mappingLogicEvent();
         epcCompiler.showLogicUnitEventsMap();
         epcCompiler.extract();
