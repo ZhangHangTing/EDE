@@ -4,6 +4,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 import java.io.File;
 import java.util.*;
 /**
@@ -11,12 +13,12 @@ import java.util.*;
  * @date 2018/10/30 15:37
  */
 public class EpcCompiler {
-
     private List<Event> epcEventList;
     private List<Function> epcFunctionList;
     private List<LogicUnit> epcLogicList;
     private List<Flow> epcFlowList;
     private Map<String, EpcObject> epcMap;
+    private Map<Event,Function> eventFunctionMap;
     private Map<Function, LogicTreeNode> functionMap;
     private Map<LogicUnit, Queue<EpcObject>> logicUnitEventsMap;
 
@@ -30,6 +32,7 @@ public class EpcCompiler {
         epcLogicList = new ArrayList<>();
         epcFlowList = new ArrayList<>();
         epcMap = new HashMap<>();
+        eventFunctionMap = new HashMap<>();
         functionMap = new HashMap<>();
         logicUnitEventsMap = new HashMap<>();
     }
@@ -97,7 +100,6 @@ public class EpcCompiler {
             epcFlowList.add(flowObject);
         }
     }
-
     // 映射逻辑节点对应的事件或逻辑节点
     public void mappingLogicEvent() {
         Queue<EpcObject> tempLogicEvents = new LinkedList<>();
@@ -105,7 +107,7 @@ public class EpcCompiler {
             for (Flow flow : epcFlowList) {
                 // 找到了指向该逻辑节点到Flow
                 if (logicUnit.getId().equals(flow.getTarget())) {
-                    // 查询到指向逻辑节点到事件节点ID
+                    // 查询到指向逻辑节点到EPC节点ID
                     String sourceEpcObjectId = flow.getSource();
                     // 获取该Epc节点，存入临时事件节点链表中,节点可能是事件或者逻辑节点
                     tempLogicEvents.add(epcMap.get(sourceEpcObjectId));
@@ -136,6 +138,7 @@ public class EpcCompiler {
                     // 如果指向函数的对象是一个事件，那么该函数只可能有一个事件，函数对应一个事件的事件树
                     if (tempSource instanceof Event) {
                         root = new LogicTreeNode(tempSource);
+                        eventFunctionMap.put((Event) tempSource,function);
                     }
                     // 如果指向函数的对象是一个逻辑表达式，那么该函数对应一棵逻辑表达事件树
                     if (tempSource instanceof LogicUnit) {
@@ -145,7 +148,6 @@ public class EpcCompiler {
                         Queue<EpcObject> fatherNodeQueue = new LinkedList<>();
                         fatherNodeQueue.add(tempSource);
                         childNodeQueue.addAll(logicUnitEventsMap.get(tempSource));
-
                         EpcObject lChildNode;
                         EpcObject fatherNode;
                         EpcObject rChildNode;
@@ -163,6 +165,10 @@ public class EpcCompiler {
                                 root = index;
                             }
                             lChildNode = childNodeQueue.poll();
+
+                            if(lChildNode instanceof Event){
+                                eventFunctionMap.put((Event)lChildNode,function);
+                            }
                             index.setLeft(new LogicTreeNode(lChildNode));
                             fatherNodeQueue.add(lChildNode);
                             if (logicUnitEventsMap.containsKey(lChildNode)) {
@@ -170,6 +176,9 @@ public class EpcCompiler {
                             }
                             if (!childNodeQueue.isEmpty()) {
                                 rChildNode = childNodeQueue.poll();
+                                if(rChildNode instanceof Event){
+                                    eventFunctionMap.put((Event)rChildNode,function);
+                                }
                                 index.setRight(new LogicTreeNode(rChildNode));
                                 fatherNodeQueue.add(rChildNode);
                                 if (logicUnitEventsMap.containsKey(rChildNode)) {
@@ -184,7 +193,6 @@ public class EpcCompiler {
             functionMap.put(function, root);
         }
     }
-
     public LogicTreeNode findIndexTreeNode(LogicTreeNode root, String indexId) {
         Queue<LogicTreeNode> queue = new LinkedList<>();
         queue.add(root);
@@ -214,6 +222,11 @@ public class EpcCompiler {
             System.out.println();
         }
     }
+    public void showEventFunctionMap(){
+        for(Map.Entry<Event,Function> map : eventFunctionMap.entrySet()){
+            System.out.println(map.getKey().getName() + " 对应的函数是：" + map.getValue().getName());
+        }
+    }
     public void preOrderVisit(LogicTreeNode root) {
         if (root != null) {
             System.out.print(root.getEpcObject().getName() + " ");
@@ -229,6 +242,7 @@ public class EpcCompiler {
         epcCompiler.showLogicUnitEventsMap();
         epcCompiler.extract();
         epcCompiler.showFunctionLogicTree();
+        epcCompiler.showEventFunctionMap();
         ProcessInfo.epcCompiler = epcCompiler;
 //        while (true) {
 //            System.out.println("running");
@@ -239,7 +253,16 @@ public class EpcCompiler {
 //            }
 //        }
     }
+    public List<Event> getEpcEventList() {
+        return epcEventList;
+    }
     public Map<Function, LogicTreeNode> getFunctionMap() {
         return functionMap;
+    }
+    public Map<Event, Function> getEventFunctionMap() {
+        return eventFunctionMap;
+    }
+    public Map<LogicUnit, Queue<EpcObject>> getLogicUnitEventsMap() {
+        return logicUnitEventsMap;
     }
 }
