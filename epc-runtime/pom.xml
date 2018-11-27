@@ -32,13 +32,17 @@
             <groupId>NewWSNClient-final</groupId>
             <artifactId>NewWSNClient-final</artifactId>
             <version>1.0</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>bupt.zht</groupId>
             <artifactId>epc-compile</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>bupt.zht</groupId>
+            <artifactId>ode-start</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

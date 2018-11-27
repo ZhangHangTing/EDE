@@ -242,25 +242,25 @@ public class EpcCompiler {
             preOrderVisit(root.getRight());
         }
     }
-    public static void main(String[] args) throws DocumentException {
-        EpcCompiler epcCompiler = new EpcCompiler();
-        String path = System.getProperty("user.dir") + "/epc-compile/src/main/resources/";
-        epcCompiler.compile(path + "ProductAndAssemble.xml");
-        epcCompiler.mappingLogicEvent();
-        epcCompiler.showLogicUnitEventsMap();
-        epcCompiler.extract();
-        epcCompiler.showFunctionLogicTree();
-        epcCompiler.showEventFunctionMap();
-        ProcessInfo.epcCompiler = epcCompiler;
-//        while (true) {
-//            System.out.println("running");
-//            try {
-//                Thread.sleep(3000);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
-    }
+//    public static void main(String[] args) throws DocumentException {
+//        EpcCompiler epcCompiler = new EpcCompiler();
+//        String path = System.getProperty("user.dir") + "/epc-compile/src/main/resources/";
+//        epcCompiler.compile(path + "ProductAndAssemble.xml");
+//        epcCompiler.mappingLogicEvent();
+//        epcCompiler.showLogicUnitEventsMap();
+//        epcCompiler.extract();
+//        epcCompiler.showFunctionLogicTree();
+//        epcCompiler.showEventFunctionMap();
+//        ProcessInfo.epcCompiler = epcCompiler;
+////        while (true) {
+////            System.out.println("running");
+////            try {
+////                Thread.sleep(3000);
+////            } catch (InterruptedException e) {
+////                e.printStackTrace();
+////            }
+////        }
+//    }
     public List<Event> getEpcEventList() {
         return epcEventList;
     }
