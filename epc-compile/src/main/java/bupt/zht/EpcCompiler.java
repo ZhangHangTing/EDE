@@ -13,14 +13,22 @@ import java.util.*;
  * @date 2018/10/30 15:37
  */
 public class EpcCompiler {
+    // 保存所有事件的链表
     private List<Event> epcEventList;
+    // 保存所有函数的链表
     private List<Function> epcFunctionList;
+    // 保存所有逻辑节点的链表
     private List<LogicUnit> epcLogicList;
+    // 保存所有有向线段的链表
     private List<Flow> epcFlowList;
+    // 根据节点ID找到EpcObject的Map
     private Map<String, EpcObject> epcMap;
+    // 根据事件找到该事件属于的某一个函数Map
     private Map<Event,Function> eventFunctionMap;
+    // 每一个函数对应一棵逻辑表达树
     private Map<Function, LogicTreeNode> functionMap;
-    private Map<LogicUnit, Queue<EpcObject>> logicUnitEventsMap;
+    // 每一个逻辑节点对应的事件或逻辑节点链表
+    private Map<LogicUnit, Queue<EpcObject>> logicUnitObjectMap;
 
     public EpcCompiler() {
         init();
@@ -34,7 +42,7 @@ public class EpcCompiler {
         epcMap = new HashMap<>();
         eventFunctionMap = new HashMap<>();
         functionMap = new HashMap<>();
-        logicUnitEventsMap = new HashMap<>();
+        logicUnitObjectMap = new HashMap<>();
     }
 
     // 第一步编译，将EPML文档解析成DOM对象，存入链表和Map中
@@ -113,7 +121,7 @@ public class EpcCompiler {
                     tempLogicEvents.add(epcMap.get(sourceEpcObjectId));
                 }
             }
-            logicUnitEventsMap.put(logicUnit, new LinkedList<>(tempLogicEvents));
+            logicUnitObjectMap.put(logicUnit, new LinkedList<>(tempLogicEvents));
             tempLogicEvents.clear();
         }
     }
@@ -147,7 +155,7 @@ public class EpcCompiler {
                         Queue<EpcObject> childNodeQueue = new LinkedList<>();
                         Queue<EpcObject> fatherNodeQueue = new LinkedList<>();
                         fatherNodeQueue.add(tempSource);
-                        childNodeQueue.addAll(logicUnitEventsMap.get(tempSource));
+                        childNodeQueue.addAll(logicUnitObjectMap.get(tempSource));
                         EpcObject lChildNode;
                         EpcObject fatherNode;
                         EpcObject rChildNode;
@@ -171,8 +179,8 @@ public class EpcCompiler {
                             }
                             index.setLeft(new LogicTreeNode(lChildNode));
                             fatherNodeQueue.add(lChildNode);
-                            if (logicUnitEventsMap.containsKey(lChildNode)) {
-                                childNodeQueue.addAll(logicUnitEventsMap.get(lChildNode));
+                            if (logicUnitObjectMap.containsKey(lChildNode)) {
+                                childNodeQueue.addAll(logicUnitObjectMap.get(lChildNode));
                             }
                             if (!childNodeQueue.isEmpty()) {
                                 rChildNode = childNodeQueue.poll();
@@ -181,8 +189,8 @@ public class EpcCompiler {
                                 }
                                 index.setRight(new LogicTreeNode(rChildNode));
                                 fatherNodeQueue.add(rChildNode);
-                                if (logicUnitEventsMap.containsKey(rChildNode)) {
-                                    childNodeQueue.addAll(logicUnitEventsMap.get(rChildNode));
+                                if (logicUnitObjectMap.containsKey(rChildNode)) {
+                                    childNodeQueue.addAll(logicUnitObjectMap.get(rChildNode));
                                 }
                             }
                         }
@@ -206,7 +214,7 @@ public class EpcCompiler {
         return null;
     }
     public void showLogicUnitEventsMap() {
-        for (Map.Entry<LogicUnit, Queue<EpcObject>> map : logicUnitEventsMap.entrySet()) {
+        for (Map.Entry<LogicUnit, Queue<EpcObject>> map : logicUnitObjectMap.entrySet()) {
             Queue<EpcObject> list = map.getValue();
             System.out.print(map.getKey() + "：");
             for (EpcObject li : list) {
@@ -262,7 +270,7 @@ public class EpcCompiler {
     public Map<Event, Function> getEventFunctionMap() {
         return eventFunctionMap;
     }
-    public Map<LogicUnit, Queue<EpcObject>> getLogicUnitEventsMap() {
-        return logicUnitEventsMap;
+    public Map<LogicUnit, Queue<EpcObject>> getLogicUnitObjectMap() {
+        return logicUnitObjectMap;
     }
 }
