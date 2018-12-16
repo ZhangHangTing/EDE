@@ -2,7 +2,6 @@ package bupt.zht.monitor;
 
 import bupt.zht.ProcessInfo;
 import bupt.zht.pubsub.ReceiveEventService;
-import bupt.zht.pubsub.UpdateLogicTree;
 import wsn.wsnclient.command.SendWSNCommand;
 
 import javax.xml.ws.Endpoint;

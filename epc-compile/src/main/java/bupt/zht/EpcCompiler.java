@@ -1,5 +1,6 @@
 package bupt.zht;
 import bupt.zht.activity.*;
+import bupt.zht.process.ProcessModel;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -50,6 +51,9 @@ public class EpcCompiler {
         Document document = reader.read(new File(epmlFile));
         Element epmlNode = document.getRootElement();
         Element epcNode = epmlNode.element("epc");
+        // 这个是最新需要添加的，对于每一个epml文件，都需要制定模型的标识
+        Element modelNode = epmlNode.element("model");
+        String modelMark = modelNode.getText();
 
         List<Element> eventList = epcNode.elements("event");
         List<Element> functionList = epcNode.elements("function");
@@ -105,6 +109,14 @@ public class EpcCompiler {
             Flow flowObject = new Flow(source, target);
             epcFlowList.add(flowObject);
         }
+
+        // 编译完成将模型保存到map中
+        List<EpcObject> modelList = new ArrayList<>();
+        for(Map.Entry<String, EpcObject> map : epcMap.entrySet()){
+            EpcObject epcObject = map.getValue();
+            modelList.add(epcObject);
+        }
+        ProcessInfo.processModelMap.put(modelMark,new ProcessModel(modelMark,modelList));
     }
     // 映射逻辑节点对应的事件或逻辑节点
     public void mappingLogicEvent() {
@@ -270,5 +282,8 @@ public class EpcCompiler {
     }
     public Map<LogicUnit, Queue<EpcObject>> getLogicUnitObjectMap() {
         return logicUnitObjectMap;
+    }
+    public Map<String, EpcObject> getEpcMap() {
+        return epcMap;
     }
 }
