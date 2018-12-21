@@ -1,32 +1,23 @@
 package bupt.zht.process;
 
-import bupt.zht.EpcObject;
+import bupt.zht.EpcCompiler;
+import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @author zhanghangting
  * @date 2018/12/15 20:58
  */
 public class ProcessModel {
 
-    // 通过modelMark这个标志来确定属于哪一个流程模型
-    private String modelMark;
-    // 流程模型Id唯一标识一个流程模型，该值通过计算modelMark的hashcode值得到
+    // 通过processModelId这个标志来确定属于哪一个流程模型
     private String processModelId;
-    private List<EpcObject> modelEpcObjectList;
+    private List<ProcessInstance> processInstancesList;
+    private EpcCompiler epcCompiler;
 
-    public ProcessModel(String modelMark,List<EpcObject> modelEpcObjectList){
-        this.modelMark = modelMark;
-        this.processModelId = String.valueOf(modelMark.hashCode());
-        this.modelEpcObjectList = modelEpcObjectList;
-    }
-
-    public String getModelMark() {
-        return modelMark;
-    }
-
-    public void setModelMark(String modelMark) {
-        this.modelMark = modelMark;
+    public ProcessModel(String processModelId,EpcCompiler epcCompiler){
+        this.processModelId = processModelId;
+        this.epcCompiler = epcCompiler;
+        processInstancesList = new ArrayList<>();
     }
 
     public String getProcessModelId() {
@@ -37,13 +28,22 @@ public class ProcessModel {
         this.processModelId = processModelId;
     }
 
-    public List<EpcObject> getModelEpcObjectList() {
-        return modelEpcObjectList;
+    public List<ProcessInstance> getProcessInstancesList() {
+        return processInstancesList;
     }
 
-    public void setModelEpcObjectList(List<EpcObject> modelEpcObjectList) {
-        this.modelEpcObjectList = modelEpcObjectList;
+    public void setProcessModelInstancesList(List<ProcessInstance> processModelInstancesList) {
+        this.processInstancesList = processModelInstancesList;
     }
+
+    public EpcCompiler getEpcCompiler() {
+        return epcCompiler;
+    }
+
+    public void setEpcCompiler(EpcCompiler epcCompiler) {
+        this.epcCompiler = epcCompiler;
+    }
+
     @Override
     public int hashCode(){
         return 1;

@@ -1,6 +1,7 @@
 package bupt.zht;
 
 import bupt.zht.monitor.Monitor;
+import bupt.zht.process.ProcessModel;
 import org.dom4j.DocumentException;
 
 /**
@@ -11,14 +12,23 @@ public class Start {
     public static void main(String[] args) throws DocumentException {
         EpcCompiler epcCompiler = new EpcCompiler();
         String path = System.getProperty("user.dir") + "/epc-compile/src/main/resources/";
-        epcCompiler.compile(path + "ProductAndAssemble.xml");
-        epcCompiler.mappingLogicEvent();
-        epcCompiler.showLogicUnitEventsMap();
-        epcCompiler.extract();
-        epcCompiler.showFunctionLogicTree();
-        epcCompiler.showEventFunctionMap();
-        ProcessInfo.epcCompiler = epcCompiler;
-        Monitor.start();
+        epcCompiler.compile(epcCompiler,path + "ProductAndAssemble.xml");
+//        System.out.print("EPML流程模型已经解析完毕，输出相关信息：");
+//        int i = 1;
+//        for(ProcessModel processModel : ProcessInfo.processModelList){
+//            System.out.println("第 " + i + "个流程模型：" + processModel.getProcessModelId());
+//            processModel.getEpcCompiler().showEventFunctionMap();
+//            processModel.getEpcCompiler().showFunctionLogicTree();
+//            processModel.getEpcCompiler().showLogicUnitEventsMap();
+//        }
+
+//        epcCompiler.mappingLogicEvent();
+//        epcCompiler.showLogicUnitEventsMap();
+//        epcCompiler.extract();
+//        epcCompiler.showFunctionLogicTree();
+//        epcCompiler.showEventFunctionMap();
+//        ProcessInfo.epcCompiler = epcCompiler;
+//        Monitor.start();
 //        while (true) {
 //            System.out.println("running");
 //            try {

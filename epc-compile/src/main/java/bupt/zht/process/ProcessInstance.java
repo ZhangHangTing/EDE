@@ -1,38 +1,27 @@
 package bupt.zht.process;
 
+import bupt.zht.EpcCompiler;
 import bupt.zht.InstanceState;
-import bupt.zht.ProcessInfo;
-import bupt.zht.activity.Function;
-import java.util.List;
 /**
  * @author zhanghangting
  * @date 2018/12/15 20:58
  */
 public class ProcessInstance {
-
-    // 通过instanceMark的标志来确定属于哪一个流程实例
-    private String instanceMark;
     // processModelId标志该流程实例属于哪一个流程模型
     private String processModelId;
-    // 流程实例Id唯一标志流程实例，该值通过计算instanceMark的hashcode值得到
+    // 通过instanceMark的标志来确定属于哪一个流程实例
     private String processInstanceId;
-    private List<Function> processFunctionList;
+    // 一个流程实例中拥有一个属于每个实例的编译器，该编辑器中保存了流程实例的所有节点以及每个节点的状态
+    private EpcCompiler epcCompiler;
+    // 整个流程实例的状态
     private InstanceState instanceState;
 
-    public ProcessInstance(String processModelId,String instanceMark,List<Function> processFunctionList){
-        this.instanceMark = instanceMark;
+    public
+    ProcessInstance(String processModelId,String processInstanceId,EpcCompiler epcCompiler){
         this.processModelId = processModelId;
-        this.processInstanceId = String.valueOf(instanceMark.hashCode());
-        instanceState = InstanceState.READY;
-        this.processFunctionList = processFunctionList;
-    }
-
-    public String getInstanceMark() {
-        return instanceMark;
-    }
-
-    public void setInstanceMark(String instanceMark) {
-        this.instanceMark = instanceMark;
+        this.processInstanceId = processInstanceId;
+        this.epcCompiler = epcCompiler;
+        this.instanceState = InstanceState.READY;
     }
 
     public String getProcessModelId() {
@@ -51,12 +40,12 @@ public class ProcessInstance {
         this.processInstanceId = processInstanceId;
     }
 
-    public List<Function> getProcessFunctionList() {
-        return processFunctionList;
+    public EpcCompiler getEpcCompiler() {
+        return epcCompiler;
     }
 
-    public void setProcessFunctionList(List<Function> processFunctionList) {
-        this.processFunctionList = processFunctionList;
+    public void setEpcCompiler(EpcCompiler epcCompiler) {
+        this.epcCompiler = epcCompiler;
     }
 
     public InstanceState getInstanceState() {
@@ -66,6 +55,7 @@ public class ProcessInstance {
     public void setInstanceState(InstanceState instanceState) {
         this.instanceState = instanceState;
     }
+
     @Override
     public int hashCode(){
         return 1;

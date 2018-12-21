@@ -1,5 +1,6 @@
 package bupt.zht;
 import bupt.zht.activity.*;
+import bupt.zht.process.ProcessInstance;
 import bupt.zht.process.ProcessModel;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -12,6 +13,8 @@ import java.util.*;
  * @date 2018/10/30 15:37
  */
 public class EpcCompiler {
+
+    private String modelID = "";
     // 保存所有事件的链表
     private List<Event> epcEventList;
     // 保存所有函数的链表
@@ -32,7 +35,6 @@ public class EpcCompiler {
     public EpcCompiler() {
         init();
     }
-
     public void init() {
         epcEventList = new ArrayList<>();
         epcFunctionList = new ArrayList<>();
@@ -43,17 +45,14 @@ public class EpcCompiler {
         functionMap = new HashMap<>();
         logicUnitObjectMap = new HashMap<>();
     }
-
     // 第一步编译，将EPML文档解析成DOM对象，存入链表和Map中
-    public void compile(String epmlFile) throws DocumentException {
-
+    public void parse(String epmlFile) throws DocumentException {
         SAXReader reader = new SAXReader();
         Document document = reader.read(new File(epmlFile));
         Element epmlNode = document.getRootElement();
         Element epcNode = epmlNode.element("epc");
         // 这个是最新需要添加的，对于每一个epml文件，都需要制定模型的标识
-        Element modelNode = epmlNode.element("model");
-        String modelMark = modelNode.getText();
+        modelID = epcNode.attributeValue("modelID");
 
         List<Element> eventList = epcNode.elements("event");
         List<Element> functionList = epcNode.elements("function");
@@ -109,14 +108,6 @@ public class EpcCompiler {
             Flow flowObject = new Flow(source, target);
             epcFlowList.add(flowObject);
         }
-
-        // 编译完成将模型保存到map中
-        List<EpcObject> modelList = new ArrayList<>();
-        for(Map.Entry<String, EpcObject> map : epcMap.entrySet()){
-            EpcObject epcObject = map.getValue();
-            modelList.add(epcObject);
-        }
-        ProcessInfo.processModelMap.put(modelMark,new ProcessModel(modelMark,modelList));
     }
     // 映射逻辑节点对应的事件或逻辑节点
     public void mappingLogicEvent() {
@@ -252,25 +243,23 @@ public class EpcCompiler {
             preOrderVisit(root.getRight());
         }
     }
-//    public static void main(String[] args) throws DocumentException {
-//        EpcCompiler epcCompiler = new EpcCompiler();
-//        String path = System.getProperty("user.dir") + "/epc-compile/src/main/resources/";
-//        epcCompiler.compile(path + "ProductAndAssemble.xml");
-//        epcCompiler.mappingLogicEvent();
-//        epcCompiler.showLogicUnitEventsMap();
-//        epcCompiler.extract();
-//        epcCompiler.showFunctionLogicTree();
-//        epcCompiler.showEventFunctionMap();
-//        ProcessInfo.epcCompiler = epcCompiler;
-////        while (true) {
-////            System.out.println("running");
-////            try {
-////                Thread.sleep(3000);
-////            } catch (InterruptedException e) {
-////                e.printStackTrace();
-////            }
-////        }
-//    }
+    public void compile(EpcCompiler epcCompiler,String epmlPath){
+        // 第一步：解析EPML文件
+        try {
+            epcCompiler.parse(epmlPath);
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        }
+        // 第二步：通过匹配抽取等算法，将EPML文件编译成有结构的流程模型元素
+        epcCompiler.mappingLogicEvent();
+        // epcCompiler.showLogicUnitEventsMap();
+        epcCompiler.extract();
+        // epcCompiler.showFunctionLogicTree();
+        // epcCompiler.showEventFunctionMap();
+        // ProcessInfo.epcCompiler = epcCompiler;
+        // 第三步： 将该流程模型保存到List中，由内存来管理
+        ProcessInfo.processModelList.add(new ProcessModel(epcCompiler.getModelID(),epcCompiler));
+    }
     public List<Event> getEpcEventList() {
         return epcEventList;
     }
@@ -285,5 +274,17 @@ public class EpcCompiler {
     }
     public Map<String, EpcObject> getEpcMap() {
         return epcMap;
+    }
+    public List<Function> getEpcFunctionList() {
+        return epcFunctionList;
+    }
+    public List<LogicUnit> getEpcLogicList() {
+        return epcLogicList;
+    }
+    public List<Flow> getEpcFlowList() {
+        return epcFlowList;
+    }
+    public String getModelID() {
+        return modelID;
     }
 }

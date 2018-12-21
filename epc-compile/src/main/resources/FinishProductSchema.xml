@@ -1,0 +1,6 @@
+<EventSchema>
+    <model>FP1001</model>
+    <instance>a001</instance>
+    <theme>all:finishProduct</theme>
+    <message>finish</message>
+</EventSchema>

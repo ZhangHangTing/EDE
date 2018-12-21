@@ -1,5 +1,5 @@
 <epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de">
-    <epc name="EPC" ServicesName="null">
+    <epc name="EPC" modelID="FP1001">
         <event Theme="all:startProductA" id="2">
             <name>通知生产产品A</name>
         </event>

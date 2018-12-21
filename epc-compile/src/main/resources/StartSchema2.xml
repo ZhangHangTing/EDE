@@ -1,0 +1,6 @@
+<EventSchema>
+    <model>FP1001</model>
+    <instance>a002</instance>
+    <theme>all:startProductA</theme>
+    <message>start</message>
+</EventSchema>

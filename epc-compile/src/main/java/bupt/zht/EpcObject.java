@@ -1,6 +1,5 @@
 package bupt.zht;
 
-import java.io.ObjectInputStream;
 import java.io.Serializable;
 
 /**
