@@ -1,19 +1,15 @@
 package bupt.zht.pubsub;
 
-//import bupt.zht.EpcObject;
-//import bupt.zht.ProcessInfo;
-//import bupt.zht.activity.*;
-//import bupt.zht.service.Service;
-//import bupt.zht.service.ServiceFactory;
-//
-//import java.util.Map;
-//import java.util.Queue;
-//
+import bupt.zht.activity.Function;
+import bupt.zht.service.Service;
+import bupt.zht.service.ServiceFactory;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 ///**
 // * @author zhanghangting
 // * @date 2018/11/27 16:52
 // */
-//public class UpdateLogicTree {
+public class UpdateLogicTree {
 //
 //    private Map<LogicUnit, Queue<EpcObject>> logicUnitObjectMap;
 //
@@ -56,8 +52,9 @@ package bupt.zht.pubsub;
 //        System.out.println("消息到达，更新逻辑事件表达树");
 //    }
 //    // 如何执行该函数是关键
-//    public void executeFunction(Function function, String message){
-//        Service executeService = ServiceFactory.getServiceInstance(function.getServiceName(),message,function.getName());
-//        executeService.run();
-//    }
-//}
+    public static void executeFunction(Function function, String message){
+        System.out.println("执行函数的服务类名：" + function.getServiceName());
+        Service executeService = ServiceFactory.getServiceInstance(function.getServiceName());
+        executeService.run(message);
+    }
+}

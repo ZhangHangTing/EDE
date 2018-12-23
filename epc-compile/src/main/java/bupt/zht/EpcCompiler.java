@@ -287,4 +287,12 @@ public class EpcCompiler {
     public String getModelID() {
         return modelID;
     }
+
+    @Override
+    public String toString(){
+        showEventFunctionMap();
+        showFunctionLogicTree();
+        showLogicUnitEventsMap();
+        return "-----------------------------------";
+    }
 }

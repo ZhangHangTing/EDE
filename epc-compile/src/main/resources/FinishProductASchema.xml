@@ -2,5 +2,5 @@
     <model>FP1001</model>
     <instance>a001</instance>
     <theme>all:finishProductA</theme>
-    <message>product A has been finished</message>
+    <message>product has finished</message>
 </EventSchema>

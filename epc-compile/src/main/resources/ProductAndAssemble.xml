@@ -12,10 +12,10 @@
         <event Theme="all:finishProduct" id="25">
             <name>完成产品</name>
         </event>
-        <function ServiceName="productAService" id="3">
+        <function ServiceName="bupt.zht.service.ProductAService" id="3">
             <name>生产产品A</name>
         </function>
-        <function ServiceName="assembleService" id="17">
+        <function ServiceName="bupt.zht.service.AssembleService" id="17">
             <name>组装产品</name>
         </function>
         <ou auth="productStaff" id="7"/>

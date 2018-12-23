@@ -12,11 +12,15 @@ public class Publisher {
     private static  String wsnAddr = "http://10.108.164.106:9000/wsn-core";
     public static final  SendWSNCommandWSSyn command = new SendWSNCommandWSSyn(webserviceAddr, wsnAddr);
     public static void main(String[] args) {
-        Publisher.publish("kobe", "all:finishProductB", "all:finishProductB;产品B完成了！");
-//        Publisher.publish("kobe", "all:startProductA", "all:startProductA;可以生产产品A了！");
+//        Publisher.publish("all:startProductA",
+//                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\StartSchema.xml");
+//        Publisher.publish("all:startProductA",
+//                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\FinishProductBSchema.xml");
+        Publisher.publish("all:startProductA",
+                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\StartSchema2.xml");
     }
 
-    public static void publish(String publisher, String topic, String message) {
+    public static void publish(String topic, String message) {
 //        while(true){
             //发布者发布主题为all:Test2的message消息
             command.reliableNotify(topic,message, false, "A");

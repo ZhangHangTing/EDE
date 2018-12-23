@@ -2,15 +2,18 @@ package bupt.zht.manage;
 
 import bupt.zht.EpcCompiler;
 import bupt.zht.EpcObject;
+import bupt.zht.ProcessInfo;
 import bupt.zht.activity.*;
 import bupt.zht.process.ProcessInstance;
 import bupt.zht.process.ProcessModel;
+import bupt.zht.pubsub.UpdateLogicTree;
 import bupt.zht.service.Service;
 import bupt.zht.service.ServiceFactory;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+
 import java.io.File;
 import java.util.Map;
 import java.util.Queue;
@@ -23,21 +26,21 @@ import java.util.Queue;
     // 能够提供外部的接口对这些流程实例进行增删改查
 public class ProcessManager {
 
-    private ProcessModel processModel;
-    private ProcessInstance processInstance;
+    // private ProcessModel processModel;
+//    private ProcessInstance processInstance;
 
-    public ProcessManager(ProcessModel processModel){
-        this.processModel = processModel;
+    public ProcessManager(){
+//        this.processModel = processModel;
     }
-    public void execute(String message){
+    public void execute(ProcessModel processModel,String message){
         try {
-            parseSchema(message);
+            parseSchema(processModel,message);
         } catch (DocumentException e) {
             e.printStackTrace();
         }
     }
     // 当事件到达，对应的schema消息到达的时候，进行解析,找到这个事件对应的流程模型和流程实例
-    public void parseSchema(String schemaFile) throws DocumentException {
+    public void parseSchema(ProcessModel processModel,String schemaFile) throws DocumentException {
 
         SAXReader reader = new SAXReader();
         Document document = reader.read(new File(schemaFile));
@@ -51,40 +54,97 @@ public class ProcessManager {
         String theme = themeNode.getText();
         Element messageNode = rootNode.element("message");
         String message = messageNode.getText();
-
         // 消息的schema如果表示的是开始事件，那么创建对应流程模型的一个流程实例
         if("start".equals(message)){
-            this.processInstance = createProcessInstance(modelId,instanceId);
-            this.processModel.getProcessInstancesList().add(this.processInstance);
-            System.out.println("创建了ID为：" + instanceId + "的流程实例流程，并且添加到ProcessInfo中");
+            ProcessInstance processInstance = createProcessInstance(processModel,modelId,instanceId);
+            processModel.getProcessInstancesList().add(processInstance);
+            System.out.println("创建了ID为：" + instanceId + "的流程实例流程,打印当前ProcessInfo中的流程实例信息");
+            for (ProcessInstance tempInstance : processModel.getProcessInstancesList()) {
+                System.out.println(tempInstance.getProcessInstanceId());
+            }
+            judgeRootEvent(processInstance,theme,processInstance.getProcessInstanceId());
         }else {// 否则，找到流程实例，更新这个流程实例的运行状态
             // 第一步： 根据流程模型ID和流程实例ID找到流程实例
-            for(ProcessInstance processInstance : processModel.getProcessInstancesList()){
-                if(instanceId.equals(processInstance.getProcessInstanceId())){
-                    this.processInstance = processInstance;
+            ProcessInstance processInstance = null;
+            for(ProcessInstance pInstance : processModel.getProcessInstancesList()){
+                if(instanceId.equals(pInstance.getProcessInstanceId())){
+                    processInstance = pInstance;
                 }
             }
-            // 第二步：更新找到的流程实例的运行状态。
-            EpcCompiler modelCompier = processInstance.getEpcCompiler();
-            Event event = (Event) modelCompier.getEpcMap().get(theme);
-            Function function = modelCompier.getEventFunctionMap().get(event);
-            LogicTreeNode root = modelCompier.getFunctionMap().get(function);
-            // 触发已有的流程实例，更新流程实例状态
-            updateProcessInstance(root, event, function, message);
+            if(processInstance == null){
+                System.out.println("无法找到ID为： " + instanceId + " 的流程实例");
+                return;
+            }
+            System.out.println("找到ID为： " + processInstance.getProcessInstanceId() + " 的流程实例，接下来更新该实例的流程运行状态。。。。");
+
+            judgeRootEvent(processInstance,theme,processInstance.getProcessInstanceId());
+//            // 第二步：更新找到的流程实例的运行状态。
+//            EpcCompiler modelCompier = processInstance.getEpcCompiler();
+//            Event event = null;
+//            Function function = null;
+//
+//            for (Event e : modelCompier.getEpcEventList()) {
+//                if (theme.equals(e.getTheme())) {
+//                    event = e;
+//                    function = modelCompier.getEventFunctionMap().get(event);
+//                    break;
+//                }
+//            }
+//            if(event == null || function == null){
+//                return;
+//            }
+//            LogicTreeNode root = modelCompier.getFunctionMap().get(function);
+//            // 获取函数对应的逻辑表达树
+//            EpcObject rootObject = root.getEpcObject();
+//            // 如果逻辑表达树节点是表示的是一个事件，则直接执行
+//            if (rootObject instanceof Event) {
+//                System.out.println("找到函数对应的逻辑表达树节点是一个事件： " + ((Event) rootObject).getName());
+//                UpdateLogicTree.executeFunction(function, message);
+//                return;
+//            }
+//            // 触发已有的流程实例，更新流程实例状态
+//            updateProcessInstance(root, event, function, message,processInstance);
         }
     }
-    public ProcessInstance createProcessInstance(String processModelID,String processInstanceID){
+    public ProcessInstance createProcessInstance(ProcessModel processModel,String processModelID,String processInstanceID){
         EpcCompiler epcCompiler = processModel.getEpcCompiler();
         ProcessInstance processInstance = new ProcessInstance(processModelID,processInstanceID,epcCompiler);
         return processInstance;
     }
-    public void updateProcessInstance(LogicTreeNode root, Event event, Function function, String message) {
+    public void judgeRootEvent(ProcessInstance processInstance,String theme,String message){
 
+        EpcCompiler modelCompier = processInstance.getEpcCompiler();
+        Event event = null;
+        Function function = null;
+        for (Event e : modelCompier.getEpcEventList()) {
+            if (theme.equals(e.getTheme())) {
+                event = e;
+                function = modelCompier.getEventFunctionMap().get(event);
+                break;
+            }
+        }
+        if(event == null || function == null){
+            return;
+        }
+        LogicTreeNode root = modelCompier.getFunctionMap().get(function);
+        // 获取函数对应的逻辑表达树
+        EpcObject rootObject = root.getEpcObject();
+        // 如果逻辑表达树节点是表示的是一个事件，则直接执行
+        if (rootObject instanceof Event) {
+            System.out.println("找到函数对应的逻辑表达树节点是一个事件： " + ((Event) rootObject).getName());
+            UpdateLogicTree.executeFunction(function, message);
+            return;
+        }
+        // 触发已有的流程实例，更新流程实例状态
+        updateProcessInstance(root, event, function, message,processInstance);
+    }
+    public void updateProcessInstance(LogicTreeNode root, Event event, Function function, String message,ProcessInstance processInstance) {
+        // 目前他们共同引用同一个编译器对象，导致多线程的问题！！！！！！！！！！
         Map<LogicUnit, Queue<EpcObject>> logicUnitObjectMap = processInstance.getEpcCompiler().getLogicUnitObjectMap();;
         EpcObject rootObject = root.getEpcObject();
         // 最多需要循环每一个逻辑节点的状态变化
-        int loopNum = logicUnitObjectMap.size();
-        for (int i = 0; i < loopNum; i++) {
+        // int loopNum = logicUnitObjectMap.size();
+        // for (int i = 0; i < loopNum; i++) {
             for (Map.Entry<LogicUnit, Queue<EpcObject>> map : logicUnitObjectMap.entrySet()) {
                 LogicUnit logicUnit = map.getKey();
                 Queue<EpcObject> epcObjects = map.getValue();
@@ -103,7 +163,7 @@ public class ProcessManager {
                         logicUnit.setAlive(true);
                     }
                 }
-            }
+//            }
         }
         // 更新完Map中所有的逻辑节点状态以后，只需要将所有函数的root节点和该Map中的逻辑节点相匹配即可
         for (Map.Entry<LogicUnit, Queue<EpcObject>> map : logicUnitObjectMap.entrySet()) {
@@ -116,15 +176,7 @@ public class ProcessManager {
     }
     // 如何执行该函数是关键
     public void executeFunction(Function function, String message){
-        Service executeService = ServiceFactory.getServiceInstance(function.getServiceName(),message,function.getName());
-        executeService.run();
-    }
-
-    public ProcessModel getProcessModel() {
-        return processModel;
-    }
-
-    public ProcessInstance getProcessInstance() {
-        return processInstance;
+        Service executeService = ServiceFactory.getServiceInstance(function.getServiceName());
+        executeService.run(message);
     }
 }

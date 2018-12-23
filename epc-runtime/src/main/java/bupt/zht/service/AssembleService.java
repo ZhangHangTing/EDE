@@ -15,19 +15,18 @@ public class AssembleService implements Service{
         this.assembleSatff = assembleSatff;
     }
     @Override
-    public void run() {
-        if(validate()){
+    public void run(String message) {
+       // if(validate()){
             System.out.println("正在执行组装产品任务。。。。。");
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.print(assembleSatff + " 执行完毕!");
-            Publisher.publish(assembleSatff,"all:finishProduct","all:finishProduct;产品已经组装完成");
-        }
+            System.out.print("组装产品 任务 执行完毕!");
+           // Publisher.publish("all:finishProduct","FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\FinishProductSchema.xml");
+//        }
     }
-
     @Override
     public boolean validate() {
         // 通过前端对于权限控制的操作，获取人员权限的信息进行验证

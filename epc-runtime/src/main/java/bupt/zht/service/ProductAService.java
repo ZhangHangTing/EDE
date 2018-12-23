@@ -16,8 +16,8 @@ public class ProductAService implements Service {
         this.productSatff = productSatff;
     }
     @Override
-    public void run() {
-        if(validate()){
+    public void run(String instanceID) {
+//        if(validate()){
             System.out.println("正在执行生成产品A任务。。。。。");
             try {
                 Thread.sleep(10000);
@@ -25,12 +25,18 @@ public class ProductAService implements Service {
                 e.printStackTrace();
             }
             // 首先执行自己的任务
-            System.out.print(productSatff + " 执行完毕!");
+            System.out.print("组装产品A 任务 执行完毕!");
             // 然后触发下一个事件
-            Publisher.publish(productSatff,"all:finishProductA","all:finishProductA;产品A已经生成完成");
+        if(instanceID.equals("a001")){
+            Publisher.publish("all:finishProductA",
+                    "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\FinishProductASchema.xml");
         }
+        else{
+            Publisher.publish("all:finishProductA",
+                    "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\FinishProductASchema2.xml");
+        }
+//        }
     }
-
     @Override
     public boolean validate() {
         // 通过前端对于权限控制的操作，获取人员权限的信息进行验证

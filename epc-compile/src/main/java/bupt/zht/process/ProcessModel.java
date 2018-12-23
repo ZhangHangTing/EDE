@@ -55,4 +55,9 @@ public class ProcessModel {
         }
         return false;
     }
+    @Override
+    public String toString(){
+        System.out.println(epcCompiler);
+        return "{流程模型的ID为： " + processModelId + " 流程模型的实例数量为： " + processInstancesList.size() + " }";
+    }
 }

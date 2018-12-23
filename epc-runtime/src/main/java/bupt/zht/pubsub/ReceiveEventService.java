@@ -37,7 +37,7 @@ public class ReceiveEventService implements INotificationProcess {
             if(processModelID.equals(processModel.getProcessModelId())){
                 // 根据流程模型ID找到流程模型，将消息体和对应流程模型交给管理器处理
                 // ProcessManager应该是多线程的任务处理器
-                new ProcessManager(processModel).execute(epmlFilePath);
+                new ProcessManager().execute(processModel,epmlFilePath);
             }
         }
 //        // 接受到的数据无法判断是从哪个主题中发送过来的，只能约定发送的数据的格式

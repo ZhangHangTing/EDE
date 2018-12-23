@@ -18,26 +18,17 @@ public class Start {
         int i = 1;
         for(ProcessModel processModel : ProcessInfo.processModelList){
             System.out.println("第 " + i + "个流程模型：" + processModel.getProcessModelId());
-            processModel.getEpcCompiler().showEventFunctionMap();
-            processModel.getEpcCompiler().showFunctionLogicTree();
-            processModel.getEpcCompiler().showLogicUnitEventsMap();
+            System.out.println(processModel);
         }
-
-//        epcCompiler.mappingLogicEvent();
-//        epcCompiler.showLogicUnitEventsMap();
-//        epcCompiler.extract();
-//        epcCompiler.showFunctionLogicTree();
-//        epcCompiler.showEventFunctionMap();
-//        ProcessInfo.epcCompiler = epcCompiler;
         System.out.println("接下来监听流程实例事件信息..................");
         Monitor.start();
         while (true) {
-            for(ProcessModel processModel : ProcessInfo.processModelList){
-                System.out.println("打印当前" + processModel.getProcessModelId() + "流程模型中的流程实例：");
-                for(ProcessInstance processInstance : processModel.getProcessInstancesList()){
-                    System.out.println(processInstance.getProcessInstanceId());
-                }
-            }
+//            for(ProcessModel processModel : ProcessInfo.processModelList){
+//                System.out.println("打印当前" + processModel.getProcessModelId() + "流程模型中的流程实例：");
+//                for(ProcessInstance processInstance : processModel.getProcessInstancesList()){
+//                    System.out.println(processInstance.getProcessInstanceId());
+//                }
+//            }
             try {
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
