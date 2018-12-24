@@ -32,18 +32,16 @@ public class ProcessManager {
     public ProcessManager(){
 //        this.processModel = processModel;
     }
-    public void execute(ProcessModel processModel,String message){
+    // 当事件到达，对应的schema消息到达的时候，进行解析,找到这个事件对应的流程模型和流程实例
+    public void parseSchema(ProcessModel processModel,String schemaFile){
+
+        SAXReader reader = new SAXReader();
+        Document document = null;
         try {
-            parseSchema(processModel,message);
+            document = reader.read(new File(schemaFile));
         } catch (DocumentException e) {
             e.printStackTrace();
         }
-    }
-    // 当事件到达，对应的schema消息到达的时候，进行解析,找到这个事件对应的流程模型和流程实例
-    public void parseSchema(ProcessModel processModel,String schemaFile) throws DocumentException {
-
-        SAXReader reader = new SAXReader();
-        Document document = reader.read(new File(schemaFile));
         Element rootNode = document.getRootElement();
         // 获取流程模型和流程实例
         Element model = rootNode.element("model");
@@ -107,8 +105,10 @@ public class ProcessManager {
         }
     }
     public ProcessInstance createProcessInstance(ProcessModel processModel,String processModelID,String processInstanceID){
-        EpcCompiler epcCompiler = processModel.getEpcCompiler();
-        ProcessInstance processInstance = new ProcessInstance(processModelID,processInstanceID,epcCompiler);
+        EpcCompiler modelEpcCompiler = processModel.getEpcCompiler();
+        // 采用copy对象的方式，为每一个流程实例复制一个与模型一样，但是不同内存的epcCompiler编辑器
+        EpcCompiler instanceEpcCompiler = (EpcCompiler) modelEpcCompiler.clone();
+        ProcessInstance processInstance = new ProcessInstance(processModelID,processInstanceID,instanceEpcCompiler);
         return processInstance;
     }
     public void judgeRootEvent(ProcessInstance processInstance,String theme,String message){

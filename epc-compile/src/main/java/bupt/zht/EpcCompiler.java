@@ -12,9 +12,10 @@ import java.util.*;
  * @author zhanghangting
  * @date 2018/10/30 15:37
  */
-public class EpcCompiler {
+public class EpcCompiler implements Cloneable{
 
     private String modelID = "";
+    private String instanceID = "";
     // 保存所有事件的链表
     private List<Event> epcEventList;
     // 保存所有函数的链表
@@ -252,11 +253,7 @@ public class EpcCompiler {
         }
         // 第二步：通过匹配抽取等算法，将EPML文件编译成有结构的流程模型元素
         epcCompiler.mappingLogicEvent();
-        // epcCompiler.showLogicUnitEventsMap();
         epcCompiler.extract();
-        // epcCompiler.showFunctionLogicTree();
-        // epcCompiler.showEventFunctionMap();
-        // ProcessInfo.epcCompiler = epcCompiler;
         // 第三步： 将该流程模型保存到List中，由内存来管理
         ProcessInfo.processModelList.add(new ProcessModel(epcCompiler.getModelID(),epcCompiler));
     }
@@ -284,8 +281,23 @@ public class EpcCompiler {
     public List<Flow> getEpcFlowList() {
         return epcFlowList;
     }
+
     public String getModelID() {
         return modelID;
+    }
+
+    public String getInstanceID() {
+        return instanceID;
+    }
+
+    public void setInstanceID(String instanceID) {
+        this.instanceID = instanceID;
+    }
+
+    @Override
+    public Object clone(){
+        EpcCompiler epcCompiler = new EpcCompiler();
+        return  epcCompiler;
     }
 
     @Override
