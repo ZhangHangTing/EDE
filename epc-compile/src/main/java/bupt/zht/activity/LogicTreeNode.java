@@ -2,11 +2,13 @@ package bupt.zht.activity;
 
 import bupt.zht.EpcObject;
 
+import java.io.Serializable;
+
 /**
  * @author zhanghangting
  * @date 2018/11/11 12:05
  */
-public class LogicTreeNode {
+public class LogicTreeNode implements Serializable {
 
     private LogicTreeNode left;
     private LogicTreeNode right;

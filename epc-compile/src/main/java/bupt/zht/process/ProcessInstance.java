@@ -67,4 +67,8 @@ public class ProcessInstance {
         }
         return false;
     }
+    @Override
+    public String toString(){
+        return "{ 流程实例的ID是： " + processInstanceId  + " }";
+    }
 }

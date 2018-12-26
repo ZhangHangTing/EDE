@@ -15,8 +15,6 @@ import java.util.Map;
 public class ProcessInfo {
     // 部署到系统中的所有事件主题,用于Monitor对这些主题进行订阅
     public static List<String> eventThemeList = new ArrayList<>();
-//    // 一个流程的编译器
-//    public static EpcCompiler epcCompiler;
     // 将系统中编译过的流程模型都保存到list中，每一个流程模型中保存该模型对应的流程实例
     public static List<ProcessModel> processModelList = new ArrayList<>();
 }

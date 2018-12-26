@@ -6,16 +6,17 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import java.io.File;
+
+import java.io.*;
 import java.util.*;
 /**
  * @author zhanghangting
  * @date 2018/10/30 15:37
  */
-public class EpcCompiler implements Cloneable{
+public class EpcCompiler implements Serializable{
 
     private String modelID = "";
-    private String instanceID = "";
+//    private String instanceID = "";
     // 保存所有事件的链表
     private List<Event> epcEventList;
     // 保存所有函数的链表
@@ -32,6 +33,8 @@ public class EpcCompiler implements Cloneable{
     private Map<Function, LogicTreeNode> functionMap;
     // 每一个逻辑节点对应的事件或逻辑节点链表
     private Map<LogicUnit, Queue<EpcObject>> logicUnitObjectMap;
+
+    private StringBuilder sb = new StringBuilder("");
 
     public EpcCompiler() {
         init();
@@ -218,28 +221,35 @@ public class EpcCompiler implements Cloneable{
     public void showLogicUnitEventsMap() {
         for (Map.Entry<LogicUnit, Queue<EpcObject>> map : logicUnitObjectMap.entrySet()) {
             Queue<EpcObject> list = map.getValue();
-            System.out.print(map.getKey() + "：");
+//            System.out.print(map.getKey() + "：");
+            sb.append(map.getKey() + "：");
             for (EpcObject li : list) {
-                System.out.print(li.getName() + "；");
+//                System.out.print(li.getName() + "；");
+                sb.append(li.getName() + "；");
             }
-            System.out.println();
+//            System.out.println();
+            sb.append("\n");
         }
     }
     public void showFunctionLogicTree() {
         for (Map.Entry<Function, LogicTreeNode> map : functionMap.entrySet()) {
-            System.out.print(map.getKey().getName() + " 前序遍历：");
+//            System.out.print(map.getKey().getName() + " 前序遍历：");
+            sb.append(map.getKey().getName() + " 前序遍历：");
             preOrderVisit(map.getValue());
-            System.out.println();
+//            System.out.println();
+            sb.append("\n");
         }
     }
     public void showEventFunctionMap(){
         for(Map.Entry<Event,Function> map : eventFunctionMap.entrySet()){
-            System.out.println(map.getKey().getName() + " 对应的函数是：" + map.getValue().getName());
+            //System.out.println(map.getKey().getName() + " 对应的函数是：" + map.getValue().getName());
+            sb.append(map.getKey().getName() + " 对应的函数是：" + map.getValue().getName() + "\n");
         }
     }
     public void preOrderVisit(LogicTreeNode root) {
         if (root != null) {
-            System.out.print(root.getEpcObject().getName() + " ");
+//            System.out.print(root.getEpcObject().getName() + " ");
+            sb.append(root.getEpcObject().getName() + " ");
             preOrderVisit(root.getLeft());
             preOrderVisit(root.getRight());
         }
@@ -286,25 +296,19 @@ public class EpcCompiler implements Cloneable{
         return modelID;
     }
 
-    public String getInstanceID() {
-        return instanceID;
-    }
-
-    public void setInstanceID(String instanceID) {
-        this.instanceID = instanceID;
-    }
-
-    @Override
-    public Object clone(){
-        EpcCompiler epcCompiler = new EpcCompiler();
-        return  epcCompiler;
-    }
-
     @Override
     public String toString(){
         showEventFunctionMap();
         showFunctionLogicTree();
         showLogicUnitEventsMap();
-        return "-----------------------------------";
+        return sb.toString();
+    }
+    public Object deepClone() throws Exception {
+        ByteArrayOutputStream bo = new ByteArrayOutputStream();
+        ObjectOutputStream oo = new ObjectOutputStream(bo);
+        oo.writeObject(this);
+        ByteArrayInputStream bi = new ByteArrayInputStream(bo.toByteArray());
+        ObjectInputStream oi = new ObjectInputStream(bi);
+        return (oi.readObject());
     }
 }

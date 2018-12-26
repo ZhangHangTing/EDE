@@ -16,8 +16,10 @@ public class Publisher {
 //                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\StartSchema.xml");
 //        Publisher.publish("all:startProductA",
 //                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\FinishProductBSchema.xml");
-        Publisher.publish("all:startProductA",
-                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\StartSchema2.xml");
+//        Publisher.publish("all:startProductA",
+//                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\StartSchema2.xml");
+          Publisher.publish("all:startProductA",
+                "FP1001;D:\\IdeaWorkspace\\EDE\\epc-compile\\src\\main\\resources\\FinishProductBSchema2.xml");
     }
 
     public static void publish(String topic, String message) {

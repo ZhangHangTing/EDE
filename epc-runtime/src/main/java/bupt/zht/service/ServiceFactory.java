@@ -11,5 +11,4 @@ public class ServiceFactory {
         }
         return null;
     }
-    // 当流程引擎测试通过以后，将其改成利用发射创建对象，这样只需要通过修改配置文件，来创建对象，无需修改工厂代码
 }
